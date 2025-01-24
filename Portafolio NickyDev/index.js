@@ -3,7 +3,7 @@ const app = createApp({
   data() {
     return {
       activeButton: "all",
-      isScrolled: false, 
+      isScrolled: false,
       activeSection: "home",
       proyects: [
         {
@@ -36,6 +36,38 @@ const app = createApp({
           ]
         },
         {
+          name: "TripNow",
+          description: "An eCommerce platform for a travel agency, designed to provide customers with the best tools to plan and book their trips.",
+          type: "full",
+          image: "image/tripNow.png", 
+          url: "https://github.com/Flor87Posta/EcommerceTripNow",
+          technologies: [
+            { name: "HTML", icon: "icon/html5.png" },
+            { name: "CSS", icon: "icon/css.png" },
+            { name: "JavaScript", icon: "icon/js.png" },
+            { name: "Vue.js", icon: "icon/vue.png" },
+            { name: "Java", icon: "icon/java.png" },
+            { name: "Spring Boot", icon: "icon/spring.png" },
+            { name: "Bootstrap", icon: "icon/bootstrap.png" }
+          ]
+        }
+        ,
+        {
+          name: "Pet Shop Final",
+          description: "A website for a veterinary clinic, designed to showcase services, provide information, and facilitate communication with pet owners.",
+          type: "frontend",
+          image: "image/petshop.png",
+          url: "https://github.com/5ag5/PET-SHOP-FINAL",
+          technologies: [
+            { name: "HTML", icon: "icon/html5.png" },
+            { name: "CSS", icon: "icon/css.png" },
+            { name: "JavaScript", icon: "icon/js.png" },
+            { name: "Bootstrap", icon: "icon/bootstrap.png" },
+            { name: "Vue.js", icon: "icon/vue.png" }
+          ]
+        }
+        ,
+        {
           name: "Juego Alura Oracle",
           description: "A number-guessing game created during Oracle's logic course.",
           type: "frontend",
@@ -58,6 +90,18 @@ const app = createApp({
             { name: "CSS", icon: "icon/css.png" },
             { name: "JavaScript", icon: "icon/js.png" },
             { name: "Vue.js", icon: "icon/vue.png" }
+          ]
+        },
+        {
+          name: "Text Encryptor",
+          description: "A tool for encrypting and decrypting text, developed as part of the Oracle Alura Challenge.",
+          type: "frontend",
+          image: "image/encriptador.png",
+          url: "https://github.com/NicollLaguna/Challenge-Alura-Oracle",
+          technologies: [
+            { name: "HTML", icon: "icon/html5.png" },
+            { name: "CSS", icon: "icon/css.png" },
+            { name: "JavaScript", icon: "icon/js.png" }
           ]
         }
         ,
@@ -160,9 +204,31 @@ const app = createApp({
       });
 
       // Cambia el estado del header cuando se hace scroll
-      this.isScrolled = scrollY > 900; 
+      this.isScrolled = scrollY > 900;
     }
   }
 }
 );
 app.mount('#app');
+
+// Obtener el botón
+const scrollToTopButton = document.getElementById('scrollToTop');
+
+// Mostrar/ocultar la flecha dependiendo de la posición de desplazamiento
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 200) { // Mostrar la flecha al bajar 200px
+    scrollToTopButton.style.display = 'block';
+  } else {
+    scrollToTopButton.style.display = 'none';
+  }
+});
+
+// Agregar evento para subir suavemente al inicio
+scrollToTopButton.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita el comportamiento por defecto del ancla
+  window.scrollTo({
+    top: 0, // Posición en la que queremos estar
+    behavior: 'smooth' // Hace que el scroll sea suave
+  });
+});
+

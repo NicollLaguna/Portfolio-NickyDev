@@ -122,7 +122,6 @@ header {
 .titulo2 {
   display: inline-block;
   border-bottom: 3px solid rgb(47, 116, 200);
-  /* Línea azul debajo del título */
   padding-bottom: 10px;
   font-size: xx-large;
   letter-spacing: 4px;
@@ -221,12 +220,233 @@ header {
   color: white !important;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px){
-  .project{
+/*falta el fondo foto en el escritorio*/
+#about {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.774), rgba(0, 0, 0, 0.842)), url(./fondos/about.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
+}
+
+.info {
+  width: 35vw;
+  margin-left: 10vw;
+}
+
+.info h1 {
+  margin-bottom: 4vh;
+}
+
+.info p {
+  line-height: 1.8;
+}
+
+#education {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.811), rgba(0, 0, 0, 0.811)), url(./fondos/education.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:bottom;
+  padding:20px 20px 30px 20px;
+  text-align: center;
+}
+
+#education h1 {
+  margin-bottom: 3vh;
+}
+
+.info2 {
+  display: flex;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 6rem;
+}
+
+.carta {
+  width: 25rem;
+}
+
+.carta h2 {
+  margin-bottom: 10px;
+  filter: drop-shadow(0 0 7px rgb(4, 109, 238));
+}
+
+.loge {
+  width: 120px;
+  height: 150px;
+}
+
+.loge2 {
+  width: 150px;
+  height: 150px;
+}
+
+.loge3 {
+  width: 250px;
+  height: 150px;
+}
+
+.loge4 {
+  width: 17rem;
+  height: 150px;
+}
+
+#skills{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.598), rgba(0, 0, 0, 0.598)), url(./fondos/skills.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y:bottom;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+}
+
+.cont_skills{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50vw;
+  flex-wrap: wrap;
+}
+
+.lang{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo3{
+  display: inline-block;
+  border-bottom: 3px solid rgb(47, 116, 200);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: x-large;
+  letter-spacing: 4px;
+}
+.language, .nivel{
+  font-size: larger;
+}
+.nivel{
+  padding: 5px;
+  border: 1px solid white;
+  border-radius: 100%;
+}
+.languages{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 20px;
+  width: 20vw;
+}
+.cont_tech{
+  width: 60vw;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.cart_tech{
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  width: 95px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont_personal{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  width: 25vw;
+  justify-content: center;
+}
+.skill{
+  width: 60px;
+  height: 60px;
+}
+
+.skillp{
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(0 0 7px rgba(255, 255, 255, 0.773));
+}
+
+.pski{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: 1px solid white;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 100%;
+  box-shadow: 0 0 7px 3px rgba(47, 116, 200, 0.7);
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Oculta la flecha inicialmente */
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #235a99;
+  transform: scale(1.1);
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+
+  .project,
+  .carta {
     max-width: 300px;
   }
+
   .apellido {
     font-size: 4rem;
   }
-  
+
+  #about {
+    justify-content: center;
+  }
+
+  .info {
+    margin-left: 0;
+    width: 90%;
+  }
+  .cont_tech, .cont_skills{
+    width: 100%;
+  }
+
+  .cont_skills{
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  .cont_personal{
+    width: 90%;
+  }
 }

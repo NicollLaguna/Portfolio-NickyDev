@@ -43,8 +43,28 @@
       <a href="mailto:lagunagonzaleznicoll@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
     </div>
   </section>
-
   <main>
+    <section id="about">
+      <div class="info">
+        <h1 class="titulo2">
+          About
+        </h1>
+        <div>
+          <p>
+            I’m a Full Stack Java Developer with a strong passion for technology and a solid background in both
+            front-end
+            and back-end development. I thrive on staying up-to-date with the latest trends and emerging technologies,
+            ensuring I’m always ready to tackle new challenges in this ever-evolving field.
+            <br>
+            Driven by a constant desire to learn and grow, I’m continually exploring new horizons and seeking
+            opportunities to innovate and make an impact. Whether it’s creating intuitive user interfaces or building
+            robust server-side solutions, I’m committed to delivering high-quality results with creativity and
+            precision.
+          </p>
+        </div>
+
+      </div>
+    </section>
     <section id="proyects">
       <h1 class="titulo2">Proyects</h1>
       <div id="app2">
@@ -69,8 +89,6 @@
             FullStack
           </button>
         </div>
-
-
         <div class="cont_proye">
           <div v-for="project in filteredProyects" :key="project.name" class="project">
             <a :href="project.url" target="_blank" rel="noopener noreferrer">
@@ -87,10 +105,224 @@
 
       </div>
     </section>
-  </main>
-  <footer>
+    <section id="education">
+      <h1 class="titulo2">Education </h1>
+      <div class="info2">
+        <!-- University of Tolima -->
+        <div class="carta">
+          <img src="edu/ut.png" alt="University of Tolima Logo" class="loge">
+          <h2>University of Tolima</h2>
+          <div>
+            <p><strong>Degree:</strong> Systems Engineering</p>
+            <p><strong>Semester:</strong> Fifth Semester</p>
+            <p><strong>Description:</strong> I’m currently pursuing a degree in Systems Engineering, where I’ve gained
+              strong foundations in software development, programming, and problem-solving. I actively explore new
+              technologies to stay updated in this ever-changing field.</p>
+            <p><strong>Years:</strong> 2023 - In Progress</p>
+          </div>
+        </div>
 
-  </footer>
+        <!-- Servicio Nacional de Aprendizaje (SENA) -->
+        <div class="carta">
+          <img src="edu/sena.png" alt="SENA Logo" class="loge2">
+          <h2>Servicio Nacional de Aprendizaje (SENA)</h2>
+          <div>
+            <p><strong>Program:</strong> Software Analysis and Development Technologist</p>
+            <p><strong>Description:</strong> I completed this program, where I learned to design, develop, and analyze
+              software solutions for different industries. The experience sharpened my technical skills and strengthened
+              my knowledge of database management, programming, and software development methodologies.</p>
+            <p><strong>Years:</strong> 2022 - 2024</p>
+          </div>
+        </div>
+
+        <!-- MindHub Bootcamp -->
+        <div class="carta">
+          <img src="edu/mindhub.png" alt="MindHub Bootcamp Logo" class="loge3">
+          <h2>MindHub Bootcamp</h2>
+          <div>
+            <p><strong>Program:</strong> Full Stack Java Developer</p>
+            <p><strong>Description:</strong> An intensive +700-hour bootcamp where I specialized in SCRUM methodology
+              and developed full-stack applications using technologies such as HTML, CSS, JavaScript, Vue.js, Java,
+              Spring, and Bootstrap. The program simulated a real work environment to enhance teamwork and technical
+              skills.</p>
+            <p><strong>Years:</strong> February - June 2023</p>
+          </div>
+        </div>
+        <!-- Oracle Bootcamp -->
+        <div class="carta">
+          <img src="edu/oracle.png" alt="Oracle Next Education Logo" class="loge3">
+          <h2>Oracle Next Education</h2>
+          <div>
+            <p><strong>Program:</strong> Backend Development with AI</p>
+            <p><strong>Description:</strong> Completed an intensive program focused on backend development using Java
+              and artificial intelligence. Gained expertise in Java, Spring Boot, database management, and machine
+              learning algorithms. Developed real-world projects and worked in an agile environment with SCRUM
+              methodology.</p>
+            <p><strong>Years:</strong> 2024 - 2025</p>
+          </div>
+        </div>
+
+        <!-- Samsung Bootcamp -->
+        <div class="carta">
+          <img src="edu/samsung.png" alt="Samsung Innovation Campus Logo" class="loge4">
+          <h2>Samsung Innovation Campus</h2>
+          <div>
+            <p><strong>Program:</strong> Artificial Intelligence</p>
+            <p><strong>Description:</strong> Starting on January 27, 2025, this intensive course focuses on artificial
+              intelligence development while emphasizing soft skills to enhance professional profiles. The program aims
+              to provide comprehensive training in AI technologies and teamwork, communication, and problem-solving
+              abilities.</p>
+            <p><strong>Start Date:</strong> January 27, 2025</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <div>
+        <h1 class="titulo2">
+          Skills
+        </h1>
+      </div>
+      <div>
+        <h3 class="titulo3">Software Skills</h3>
+        <div class="cont_tech">
+          <div class="cart_tech">
+            <img src="./icon/html5.png" alt="" class="skill">
+            <p>HTML5</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/css.png" alt="" class="skill">
+            <p>CSS</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/js.png" alt="" class="skill">
+            <p>JavaScript</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/vue.png" alt="" class="skill">
+
+            <p>Vue</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/bootstrap.png" alt="" class="skill">
+
+            <p>Bootstrap</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/java.png" alt="" class="skill">
+
+            <p>Java</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/spring.png" alt="" class="skill">
+            <p>Spring Framework</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/mysql.png" alt="" class="skill">
+
+            <p>MySQL</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/h2.png" alt="" class="skill">
+
+            <p>H2 Console</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/postgreSQL.png" alt="" class="skill">
+
+            <p>PostgreSQL</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/postman.png" alt="" class="skill">
+
+            <p>Postman</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/visual.png" alt="" class="skill">
+
+            <p>VS</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/NetBeans.png" alt="" class="skill">
+
+            <p>NetBeans</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/intellij.png" alt="" class="skill">
+
+            <p>IntelliJ</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/star.png" alt="" class="skill">
+
+            <p>StarUML</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/trello.png" alt="" class="skill">
+
+            <p>Trello</p>
+          </div>
+          <div class="cart_tech">
+            <img src="./icon/notion.png" alt="" class="skill">
+
+            <p>Notion</p>
+          </div>
+        </div>
+      </div>
+      <div class="cont_skills">
+        <div class="lang">
+          <h3 class="titulo3">Languages</h3>
+          <div class="languages">
+            <h4 class="language">English</h4>
+            <h4 class="nivel">B1</h4>
+          </div>
+          <div class="languages">
+            <h4 class="language">French</h4>
+            <h4 class="nivel">A1</h4>
+          </div>
+          <div class="languages">
+            <h4 class="language">Korean</h4>
+            <h4 class="nivel">A1</h4>
+          </div>
+        </div>
+        <div class="pski">
+          <div>
+            <h3 class="titulo3">Personal Skills</h3>
+          </div>
+          <div class="cont_personal">
+            <div>
+              <img src="./icon/creativity.png" alt="" class="skillp">
+              <p>Creativity</p>
+            </div>
+            <div>
+              <img src="./icon/learning.png" alt="learning" class="skillp">
+              <p>Independent Learning</p>
+            </div>
+            <div>
+              <img src="./icon/punctually.png" alt="learning" class="skillp">
+              <p>Punctually</p>
+            </div>
+            <div>
+              <img src="./icon/quality.png" alt="learning" class="skillp">
+              <p>Demand in quality of work</p>
+            </div>
+            <div>
+              <img src="./icon/responsability.png" alt="learning" class="skillp">
+              <p>Responsability</p>
+            </div>
+            <div>
+              <img src="./icon/teamwork.png" alt="learning" class="skillp">
+              <p>Teamwork</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#top" class="scroll-to-top" id="scrollToTop">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+    
+  </main>
 
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
